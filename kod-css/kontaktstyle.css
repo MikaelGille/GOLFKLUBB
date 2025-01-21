@@ -1,0 +1,567 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*Adinas kod*/
+
+.top-nav {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  z-index: 1000;
+  position: fixed;
+  background-color: rgba(9, 20, 46, 0.7);
+  color: white;
+  padding: 1em;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 3em; 
+  position: relative;
+}
+
+.menu > li:hover > a::after {
+  display: inline;
+}
+
+/* Gemensam stil för alla dropdown-menyer */
+.dropdown-spela,
+.dropdown,
+.dropdown-medlem {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(9, 20, 46, 0.7);
+  list-style-type: none;
+  padding: 1px 0;
+  margin: 0;
+  width: 200px; 
+}
+
+/* Länkar i dropdown-menyer */
+.dropdown-spela li,
+.dropdown li,
+.dropdown-medlem li {
+  margin-bottom: 5px; /* Avstånd mellan länkar */
+  margin-top: 5px;
+  text-align: left;
+}
+
+.dropdown-spela li a,
+.dropdown li a,
+.dropdown-medlem li a {
+  padding: 0; 
+  color: white;
+  text-decoration: none;
+  display: block; 
+  text-align: left; 
+}
+
+
+.dropdown-medlem li a {
+  padding: 0px 0; 
+}
+
+.dropdown-spela li a::after,
+.dropdown li a::after,
+.dropdown-medlem li a::after {
+  content: none;
+}
+
+.menu li:hover .dropdown-spela,
+.menu li:hover .dropdown,
+.menu li:hover .dropdown-medlem {
+  display: block; 
+  color: rgb(153, 147, 147);
+}
+/* Menyinställningar */
+.menu a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center; 
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  border: solid transparent;
+  border-width: 5px 5px 0 5px;
+  border-top-color: white;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.menu li a {
+  display: block;
+  color: rgb(248, 245, 245);
+  text-decoration: none;
+  padding: 0.5em;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.menu li:hover > a::after {
+  display: inline;
+}
+
+.menu li a:hover {
+  color: grey;
+}
+
+.menu li:hover > .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(9, 20, 46, 0.7);
+  list-style-type: none;
+  padding: 10px 0 0;
+  margin: 0;
+  width: 200px;
+}
+
+.dropdown li {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.dropdown li a {
+  padding: 10px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(9, 20, 46, 0.7);
+  list-style-type: none;
+  padding: 10px 0 0;
+  margin: 0;
+  width: 200px;
+}
+
+.dropdown li {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.dropdown li a {
+  padding: 10px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background-color: rgba(9, 20, 46, 0.7);
+}
+
+/* Medlems dropdown */
+.dropdown-medlem {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(9, 20, 46, 0.7);
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 200px;
+}
+
+.dropdown-medlem li {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.dropdown-medlem li a {
+  padding: 10px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-medlem li a:hover {
+  background-color: rgba(9, 20, 46, 0.7);
+}
+
+
+.menu li:hover .dropdown-medlem {
+  display: block;
+}
+
+/* Spela dropdown */
+.menu li:hover .dropdown-spela {
+  display: block;
+}
+
+/*Här slutar Adinas kod*/
+
+
+.header-image {
+  width: 100%; /* Gör så att bilden sträcker sig över hela bredden */
+}
+
+.header-image img {
+  width: 100%; /* Gör så att bilden anpassas till containerbredden */
+  height: auto; /* Bevarar bildens aspektförhållande */
+  max-height: 300px; /* Sätter en maxhöjd på bilden (justera värdet efter behov) */
+  object-fit: cover; /* Se till att bilden fyller området utan att bli förvrängd */
+}
+
+
+/* Flexbox Layout for Contact and Map Information */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Ensure top alignment of sections */
+  gap: 40px; /* Add some space between columns */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  flex: 1; /* Make contact info take more space */
+  padding-right: 20px; /* Add some padding for spacing */
+}
+
+.map-info {
+  flex: 1;
+}
+
+/* Adjust the map container width and height */
+.map-container {
+  margin: 20px 0;
+  max-width: 100%; /* Ensure responsiveness */
+  height: 400px; /* Sätt en standardhöjd för större skärmar */
+}
+
+.map-container iframe {
+  width: 100%; /* Tar upp hela bredden av sin container */
+  height: 100%; /* Tar upp hela höjden av sin container */
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column; /* Stack columns vertically */
+      gap: 20px;
+  }
+}
+ 
+.contact-form {
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+ 
+.contact-form .message-box {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-items:center;
+  align-items: center;
+  padding: 3em;
+  text-align: center;
+  width: 500px;
+  height: auto;
+  border-radius: 14px;
+}
+ 
+ 
+.contact-form textarea {
+  border-radius: 6px;
+  border: 2px solid rgb(215, 214, 214);
+  width: 100%;
+}
+ 
+.contact-form .submit-button {
+  background-color: #006400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+ 
+.contact-form .submit-button:hover {
+  background-color:#004d00;
+}
+ 
+
+
+footer {
+  background-color: rgba(9, 20, 46, 0.7);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
+.footer-hours, .footer-links, .footer-social {
+  
+  text-align: left;
+}
+
+.footer-hours h3, .footer-links h3, .footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-hours p, .footer-links a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  width: 30px;
+}
+
+.footer-social a:hover img {
+  opacity: 0.8;
+}
+
+hr.line {
+  width: 90%;
+  border: 0.5px solid #555;
+  margin: 20px auto;
+}
+
+.footer-container-legal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  margin-top: 20px;
+}
+
+.footer-container-legal a {
+  color: rgb(248, 245, 245);
+  text-decoration: none;
+}
+
+.footer-container-legal a:hover {
+  color: rgb(128, 128, 128);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-logo img, .footer-social img {
+      margin-bottom: 20px;
+  }
+
+  .footer-hours, .footer-links, .footer-social {
+      text-align: center;
+      max-width: 100%;
+  }
+
+  hr.line {
+      width: 100%;
+  }
+}
+
+/* === Brytpunkt för 1024px === */
+@media (max-width: 1024px) {
+  .contact-container {
+      flex-direction: column;
+      padding: 20px 10px;
+  }
+
+  .top-nav {
+      padding: 0.5em;
+  }
+
+  .menu li {
+      margin: 0 1.5em;
+  }
+
+  .header-image img {
+      max-height: 250px;
+  }
+
+  .footer-container {
+      gap: 40px;
+      padding: 20px;
+  }
+
+  .footer-logo img {
+      width: 300px;
+  }
+
+  .footer-container-legal {
+      gap: 20%;
+  }
+}
+
+/* === Brytpunkt för 768px === */
+@media (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      padding: 10px 0;
+  }
+
+  .menu li {
+      margin: 0.5em 0;
+  }
+
+  .header-image img {
+      max-height: 200px;
+  }
+
+  .map-container {
+    width: 100%;
+    height: auto; /* Låt höjden justeras automatiskt */
+    max-width: 90%; /* Justera för att minska kartan */
+  }
+  
+  .map-info {
+    width: 100%;
+    max-width: 90%;
+  }
+  .contact-container {
+      padding: 15px;
+  }
+
+  .contact-form .message-box {
+      width: 100%;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+  }
+
+  .footer-logo img {
+      width: 250px;
+  }
+
+  .footer-social img {
+      width: 30px;
+  }
+}
+
+/* === Brytpunkt för 480px === */
+@media (max-width: 480px) {
+  .top-nav {
+      padding: 10px;
+      text-align: center;
+  }
+
+  .menu {
+      flex-direction: column;
+  }
+
+  .menu li {
+      margin: 0.3em 0;
+  }
+
+  .map-container {
+    width: 100%;
+    max-width: 80%;
+    height: auto; /* Låt höjden justeras automatiskt */
+    text-align: center;
+  }
+
+  .contact-container {
+      padding: 10px;
+      text-align: center;
+  }
+
+  .header-image img {
+      max-height: 150px;
+  }
+
+  .footer-container {
+      gap: 10px;
+      padding: 10px;
+  }
+
+  .footer-logo img {
+      width: 200px;
+  }
+
+  .footer-hours, .footer-links, .footer-social {
+      max-width: 100%;
+  }
+
+  .footer-social img {
+      width: 25px;
+  }
+}

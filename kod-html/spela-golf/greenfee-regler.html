@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokning - Priser & regler</title>
+    <link rel="stylesheet" href="/Grupprojekt-Golfklubb/kod-css/golfklubb-style.css">
+    <link rel="stylesheet" href="/Grupprojekt-Golfklubb/kod-css/bokning-style.css">
+</head>
+<body>
+
+   <!-- Adinas nav del -->
+   <!-- Adinas nav del -->
+
+
+   <div class="top-nav">
+    <ul class="menu">
+        <li><a href="/Grupprojekt-Golfklubb/Index.html">Hem</a></li>
+
+        <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/gast.html">Spela golf</a>
+            <ul class="dropdown-spela">
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/foretag.html">Företag</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/gast.html">Gäst</a></li>
+                 <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/greenfee-regler.html">Greenfee & Regler</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/tavlingar-evenemang/tavlingar-evenemang.html">Tävlingar/<br>Evenemang</a></li>
+            </ul>
+        </li>
+
+        <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/omoss.html">Om oss</a>
+            <ul class="dropdown">
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/visiontest2.html">Historia och vision</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/banorna.html">Våra banor</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/faciliteter.html">Faciliteter</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Medlem</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/nyheter.html">Nyheter</a></li>
+            </ul>
+        </li>
+
+        <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Medlem</a>
+            <ul class="dropdown-medlem">
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Logga in</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/createnewmember.html">Bli medlem</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Förmåner</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/bokning.html">Bokning</a></li>
+
+
+            </ul>
+        </li>
+
+        <li><a href="/Grupprojekt-Golfklubb/kod-html/kontakt/kontakt.html">Kontakt</a></li>
+
+        <li><a href="/Grupprojekt-Golfklubb/kod-html/restaurang.html" target="_blank">Restaurang</a></li>
+
+     
+
+        <li><a href="/Grupprojekt-Golfklubb/kod-html/shop-index.html" target="_blank">Shop</a></li>
+    </ul>
+
+<!-- Hamburgermeny för mindre skärmar -->
+<div class="hamburger-menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">&#9776;</label>
+        <ul class="hamburger-dropdown">
+            <li><a href="/Grupprojekt-Golfklubb/Index.html">Hem</a></li>
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/gast.html">Spela golf</a>
+                <ul class="dropdown-spela">
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/foretag.html">Företag</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/gast.html">Gäst</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/greenfee-regler.html">Greenfee & Regler</a></li>
+                    <li id="four"><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/tavlingar-evenemang/tavlingar-evenemang.html">Tävlingar/Evenemang</a></li>
+                </ul>
+            </li>
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/omoss.html">Om oss</a>
+                <ul class="dropdown">
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/visiontest2.html">Historia och vision</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/banorna.html">Våra banor</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/faciliteter.html">Faciliteter</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Medlem</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/nyheter.html">Nyheter</a></li>
+                </ul>
+            </li>
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Medlem</a>
+                <ul class="dropdown-medlem">
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Logga in</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/createnewmember.html">Bli medlem</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Förmåner</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/bokning.html">Bokning</a></li>
+                </ul>
+            </li>
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/kontakt/kontakt.html">Kontakt</a></li>
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/restaurang.html" target="_blank">Restaurang</a></li>
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/shop-index.html" target="_blank">Shop</a></li>
+        </ul>
+    </div>
+</div>
+   <!-- Adinas nav del slut -->
+
+     <header class="greenfee-header">
+        <img src="/Grupprojekt-Golfklubb/bilder/greenfee-header.jpg" alt="Golfbana">
+     </header>
+
+     <section class="container-rules">
+       <div class="greenfee">
+        <div class="greenfee-title">
+            <h1>Greenfee</h1>
+        </div>
+            <ul class="price">
+                <li>MÅNDAG-TORSDAG</li>
+                <li>700 kr</li>
+                <li>FREDAG</li>
+                <li>900 kr</li>
+                <li>LÖRDAG, SÖNDAG & HELGDAG</li>
+                <li>1000 kr</li>
+            </ul>
+
+            <ul class="discount-offer">
+                <li>Rabatter och erbjudanden</li>
+                <li>Medlemmar: 10% rabatt på greenfee</li>
+                <li>Grupper (minst 4 personer): 15% rabatt på totalbeloppet</li>
+                <li>Studenter: 20% rabatt (giltigt studentkort krävs)</li>
+                <li>Juniorer: 50% rabatt (under 18 år)</li>
+                <li>Seniorer: 15% rabatt på vardagar</li>
+            </ul>
+
+            <ul class="information">
+                <li>Övrig information</li>
+                <li>Uthyrning av vagn: 100 kr per runda</li>
+                <li>Uthyrning av golfklubbor: 200 kr per set</li>
+                <li>Golfbil: 300 kr per runda (kan bokas i förväg)</li>
+            </ul>
+       </div>
+
+       <div class="vertical-line"></div>
+
+       <div class="booking-rules">
+        <div class="rules-title">
+            <h1>Regler</h1>
+        </div>
+        <div class="rules-text">
+            <h3>Bokning:</h3>
+            <ul class="rules">
+                <li>Medlemmar kan boka 14 dagar i förväg; icke-medlemmar 7 dagar i förväg</li>
+                <li>Max 2 bokningar per dag upp till 4 spelare per bokning</li>
+            </ul>
+            <h3>Avbokning:</h3>
+            <ul class="rules">
+                <li>Avbokning måste ske senast 24 timmar innan; annars debiteras full greenfee</li>
+                <li>Medlemmar som uteblir från bokad tid kan få sin bokningsrätt begränsad</li>
+            </ul>
+            <h3>Greenfee:</h3>
+            <ul class="rules">
+                <li>Betalas vid bokning online eller i receptionen före spel</li>
+                <li>Kontantfri anläggning. Betalning accepteras via kort eller Swish</li>
+            </ul>
+            <h3>Golfbilar:</h3>
+            <ul class="rules">
+                <li>Hyrning av golfbil kräver giltigt körkort</li>
+                <li>Max antal passagerare är två per golfbil</li>
+            </ul>
+            <h3>Gäster:</h3>
+            <ul class="rules">
+                <li>Medlemmar får ta med upp till 3 gäster; de betalar aktuell greenfee</li>
+                <li>Gäster ska alltid bokas av en medlem</li>
+            </ul>
+            <h3>Sen ankomst:</h3>
+            <ul class="rules">
+                <li>Spelare som är försenade kan förlora sin starttid</li>
+                <li>Vid sen ankomst över 15 minuter kommer bokningen att avbokas</li>
+            </ul>
+            <h3>Etikett:</h3>
+            <ul class="rules">
+                <li>Vårdad klädsel</li>
+                <li>Spelare förväntas följa golfetikett</li>
+            </ul>
+        </div>
+       </div>
+     </section>
+
+     <section class="bottom-style">
+        <div class="bottom-info">
+           <h2>Om du har några frågor kring våra regler, greenfee eller annan information, 
+            tveka inte att höra av dig till oss i receptionen. Vi finns här för att hjälpa 
+            dig och göra din upplevelse hos oss så bra som möjligt.</h2>
+               <p>Du når oss enkelt via mejl på <a href="#">info@tucgolfklubb.se</a> eller genom att besöka oss i receptionen.</p> 
+        </div>
+     </section>
+
+     <footer>
+        <div class="footer-container">
+            
+            <div class="footer-logo">
+                <img src="/Grupprojekt-Golfklubb/bilder/logo-footer.png" alt="Golfklubbens logotyp">
+            </div>
+    
+            
+            <div class="footer-hours">
+                <h3>Öppettider</h3>
+                <p>Måndag - Fredag: 09:00 - 18:00</p>
+                <p>Lördag - Söndag: 10:00 - 18:00</p>
+            </div>
+    
+            
+            <div class="footer-links">
+                <h3>Länkar</h3>
+                <a href="/Grupprojekt-Golfklubb/kod-html/Omoss/omoss.html">Om oss</a>
+                <a href="/Grupprojekt-Golfklubb/kod-html/kontakt/kontakt.html">Kontakt</a>
+                
+            </div>
+    
+            
+            <div class="footer-social">
+                <h3>Följ oss</h3>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="/Grupprojekt-Golfklubb/bilder/insta-loga.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="/Grupprojekt-Golfklubb/bilder/facebook-loga.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+        <!--Start of Geneskod Upphövsrätt-->
+        <hr class="line">
+        <div class="footer-container-legal">
+            <div class="footer-cookies">
+                <p><a href="/Grupprojekt-Golfklubb/kod-html/legal/legal.html">Kakor</a> &VerticalLine;
+                    <a href="/Grupprojekt-Golfklubb/kod-html/legal/legal.html">Integritetspolicy</a>
+                </p>
+            </div>
+            <div class="footer-copyright">
+                <p><a href="/Grupprojekt-Golfklubb/kod-html/legal/legal.html">Copyright &copy; 2004-2024</a></p>
+            </div>
+        </div>
+        <!--End of Geneskod Upphövsrätt-->
+    </footer>
+    
+</body>
+</html>

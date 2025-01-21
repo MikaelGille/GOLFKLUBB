@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="se-SV">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tavlingar-evenemang</title>
+  <link rel="stylesheet" href="/Grupprojekt-Golfklubb/kod-css/golfklubb-style.css">
+  <link rel="stylesheet" href="/Grupprojekt-Golfklubb/kod-css/tavlingar-evenemang.css">
+</head>
+
+<body>
+      <!-- Adinas nav del -->
+
+
+      <div class="top-nav">
+        <ul class="menu">
+          <li><a href="/Grupprojekt-Golfklubb/Index.html">Hem</a></li>
+
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/gast.html">Spela golf</a>
+                <ul class="dropdown-spela">
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/foretag.html">Företag</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/gast.html">Gäst</a></li>
+                     <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/greenfee-regler.html">Greenfee & Regler</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/tavlingar-evenemang/tavlingar-evenemang.html">Tävlingar/<br>Evenemang</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/omoss.html">Om oss</a>
+                <ul class="dropdown">
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/visiontest2.html">Historia och vision</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/banorna.html">Våra banor</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/faciliteter.html">Faciliteter</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Medlem</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/nyheter.html">Nyheter</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Medlem</a>
+                <ul class="dropdown-medlem">
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Logga in</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/createnewmember.html">Bli medlem</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Förmåner</a></li>
+                    <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/bokning.html">Bokning</a></li>
+
+
+                </ul>
+            </li>
+
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/kontakt/kontakt.html">Kontakt</a></li>
+
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/restaurang.html" target="_blank">Restaurang</a></li>
+
+         
+
+            <li><a href="/Grupprojekt-Golfklubb/kod-html/shop-index.html" target="_blank">Shop</a></li>
+        </ul>
+
+ <!-- Hamburgermeny för mindre skärmar -->
+<div class="hamburger-menu">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger-icon">&#9776;</label>
+            <ul class="hamburger-dropdown">
+                <li><a href="/Grupprojekt-Golfklubb/Index.html">Hem</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/gast.html">Spela golf</a>
+                    <ul class="dropdown-spela">
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/foretag.html">Företag</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/gast.html">Gäst</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/greenfee-regler.html">Greenfee & Regler</a></li>
+                        <li id="four"><a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/tavlingar-evenemang/tavlingar-evenemang.html">Tävlingar/Evenemang</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/omoss.html">Om oss</a>
+                    <ul class="dropdown">
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/visiontest2.html">Historia och vision</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/banorna.html">Våra banor</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/faciliteter.html">Faciliteter</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Medlem</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/Omoss/nyheter.html">Nyheter</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Medlem</a>
+                    <ul class="dropdown-medlem">
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Logga in</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/createnewmember.html">Bli medlem</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/medlem.html">Förmåner</a></li>
+                        <li><a href="/Grupprojekt-Golfklubb/kod-html/medlem/bokning.html">Bokning</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/kontakt/kontakt.html">Kontakt</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/restaurang.html" target="_blank">Restaurang</a></li>
+                <li><a href="/Grupprojekt-Golfklubb/kod-html/shop-index.html" target="_blank">Shop</a></li>
+            </ul>
+        </div>
+    </div>
+   <!-- Adinas nav del slut -->
+
+  <!--Start Geneskod: Tävlingar och Evenemang -->
+  <!--Header-->
+  <div class="header">
+    <h1>Tävlingar och Evenemang</h1>
+    <h2 class="h2head">Svinga mot stjärnorna... låt varje putt bli en seger!</h2>
+  </div>
+
+  <!--Flex content-->
+  <div class="row">
+    <div class="side">
+      <div class="tavdropdown">
+        <button class="tavdropbtn">MENY</button>
+        <div class="tavdropdown-content">
+          <a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/tavlingar-evenemang/tavlingar-evenemang.html">Tävlingar och Evenemang</a>
+          <a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/tavlingar-evenemang/kalender.html">Kalendar</a>
+          <a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/tavlingar-evenemang/kalender.html">Resultat</a>
+          <a href="/Grupprojekt-Golfklubb/kod-html/spela-golf/tavlingar-evenemang/anmalan.html">Anmälan</a>
+        </div>
+      </div>
+
+      <hgroup>
+        <h3 class="haside1">Senaste månads tävlingresultat</h3>
+        <p class="pinfo">Se nedan senaste månadens tävlingsresultaten nedan:</p>
+      </hgroup>
+
+      <div class="latest">
+        <table>
+          <tr>
+            <th colspan="5">September</th>
+          </tr>
+          <tr>
+            <th>Tävling</th>
+            <th>Datum</th>
+            <th>Priset</th>
+            <th>Namn</th>
+            <th>Slag/Poäng</th>
+          </tr>
+          <tr>
+            <td>Höstcup</td>
+            <td>5 Sep</td>
+            <td>Vinnare</td>
+            <td>Erik Svensson</td>
+            <td>68 slag</td>
+          </tr>
+          <tr>
+            <td>Höstcup</td>
+            <td>5 Sep</td>
+            <td>Andra plats</td>
+            <td>Anna Johansson</td>
+            <td>72 slag</td>
+          </tr>
+          <tr>
+            <td>Klubbens öppna dag</td>
+            <td>10 Sep</td>
+            <td>Bästa nybörjare</td>
+            <td>Julia Eriksson</td>
+            <td>41 slag</td>
+          </tr>
+          <tr>
+            <td>Herrseriens final </td>
+            <td>15 Sep</td>
+            <td>Vinnare</td>
+            <td>Mats Andersson</td>
+            <td>75 slag</td>
+          </tr>
+          <tr>
+            <td>Träningstävling</td>
+            <td>20 Sep</td>
+            <td>Vinnare</td>
+            <td>Lars Olsson</td>
+            <td>71 slag</td>
+          </tr>
+          <tr>
+            <td>Månadens bästa spelare</td>
+            <td>30 Sep</td>
+            <td>Vinnare</td>
+            <td>Erik Svensson</td>
+            <td>65 slag</td>
+          </tr>
+          <tr>
+            <td>Månadens bästa spelare</td>
+            <td>30 Sep</td>
+            <td>Andra plats</td>
+            <td>Maria Karlsson</td>
+            <td>69 slag</td>
+          </tr>
+        </table>
+      </div>
+
+      <hgroup>
+        <h3 class="haside1">Kommande månads tävlings- och evenemangskalender</h3>
+        <p class="pinfo">Se nedan kommande tävlingar och evenemang:</p>
+      </hgroup>
+
+      <div class="ongoing">
+        <table>
+          <tr>
+            <th colspan="3">November</th>
+          </tr>
+          <tr>
+            <th>Datum</th>
+            <th>Tid</th>
+            <th>Tävlingar / Evenemang</th>
+          </tr>
+          <tr>
+            <td>Nov 10</td>
+            <td>09:00 - 17:00</td>
+            <td>Klubbens 20-årsjubileum – Stort evenemang</td>
+          </tr>
+          <tr>
+            <td>Nov 16</td>
+            <td>10:00 - 14:00</td>
+            <td>Inomhusgolftävling – Simulatorcup</td>
+          </tr>
+          <tr>
+            <td>Nov 21</td>
+            <td>10:00 - 15:00</td>
+            <td>Julklappsgolf – Samla in klappar till behövande</td>
+          </tr>
+          <tr>
+            <td>Nov 26</td>
+            <td>12:00 - 15:00</td>
+            <td>Träningstävling – Fokus på puttning</td>
+          </tr>
+          <tr>
+            <td>Nov 30</td>
+            <td>09:00 - 14:00</td>
+            <td>Månadens bästa spelare – 18 hål</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="kalenderpdf">
+        <hgroup>
+          <h3 class="haside2">Kalender 2024:</h3>
+          <p class="pinfo">Öppna PDF-filen för hela årets tävlingar och evenemang <a href="/Grupprojekt-Golfklubb/bilder/pdfkalender.pdf">2024
+              Kalender</a>.</p>
+        </hgroup>
+      </div>
+
+      <div class="resultspdf">
+        <hgroup>
+          <h3 class="haside2">Tävlingars Resultat 2024:</h3>
+          <p class="pinfo">Öppna PDF-filen för hela årets tävlingars resultat <a href="/Grupprojekt-Golfklubb/bilder/pdfresults.pdf">2024
+              Resultat</a>.</p>
+        </hgroup>
+      </div>
+    </div>
+
+
+    <div class="mainwelcome">
+      <h2 class="uh2">Hej och varmt välkomna alla golfentusiaster!</h2>
+      <div class="welcomevid">
+        <video autoplay muted loop id="tevideo">
+          <source src="/Grupprojekt-Golfklubb/filmer/tavgolf5.mp4" type="video/mp4">
+        </video>
+        <p class="tavcallout">Vi är glada att välkomna er till en fantastisk säsong av golftävlingar och
+          aktiviteter!<br><br>
+          Förbered er för spännande matcher, roliga aktiviteter och chansen att träffa både gamla och nya vänner på
+          golfbanan!
+          Oavsett om du är en erfaren spelare eller nybörjare, kommer det att finnas något för alla. Vi har planerat
+          allt från tävlingar med priser till sociala evenemang där vi kan njuta av gemenskapen.
+          Håll ögonen öppna för datum och detaljer, och se till att anmäla er!<br><br>
+          Tillsammans skapar vi minnen och upplevelser som varar livet ut. Låt oss göra denna golfsäsong
+          oförglömlig!<br><br>
+
+          Vi ses på banan!</p>
+      </div>
+
+    </div>
+  </div>
+  <!--End Geneskod: Tävlingar och Evenemang -->
+
+  <footer>
+    <div class="footer-container">
+        
+        <div class="footer-logo">
+            <img src="/Grupprojekt-Golfklubb/bilder/logo-footer.png" alt="Golfklubbens logotyp">
+        </div>
+
+        
+        <div class="footer-hours">
+            <h3>Öppettider</h3>
+            <p>Måndag - Fredag: 09:00 - 18:00</p>
+            <p>Lördag - Söndag: 10:00 - 18:00</p>
+        </div>
+
+        
+        <div class="footer-links">
+            <h3>Länkar</h3>
+            <a href="/Grupprojekt-Golfklubb/kod-html/Omoss/omoss.html">Om oss</a>
+            <a href="/Grupprojekt-Golfklubb/kod-html/kontakt/kontakt.html">Kontakt</a>
+            
+        </div>
+
+        
+        <div class="footer-social">
+            <h3>Följ oss</h3>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="/Grupprojekt-Golfklubb/bilder/insta-loga.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="/Grupprojekt-Golfklubb/bilder/facebook-loga.png" alt="Facebook">
+            </a>
+        </div>
+    </div>
+    <!--Start of Geneskod Upphövsrätt-->
+    <hr class="line">
+    <div class="footer-container-legal">
+        <div class="footer-cookies">
+            <p><a href="/Grupprojekt-Golfklubb/kod-html/legal/legal.html">Kakor</a> &VerticalLine;
+                <a href="/Grupprojekt-Golfklubb/kod-html/legal/legal.html">Integritetspolicy</a>
+            </p>
+        </div>
+        <div class="footer-copyright">
+            <p><a href="/Grupprojekt-Golfklubb/kod-html/legal/legal.html">Copyright &copy; 2004-2024</a></p>
+        </div>
+    </div>
+    <!--End of Geneskod Upphövsrätt-->
+</footer>
+
+</body>
+
+</html>

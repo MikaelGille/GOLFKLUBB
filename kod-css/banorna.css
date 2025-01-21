@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.background-div2 {
+    background-image: url(/Grupprojekt-Golfklubb/bilder/golf-2217600_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  /*  min-height:calc(100vh-100px); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .meny-höger-sida-omoss {
+    font-family: "Josefin Sans";
+    line-height: 50px;
+    margin-top: 10%;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    padding-left: 0;
+}
+
+.meny-höger-sida-omoss .link-omoss {
+    display: inline;
+    padding: 0 30px;
+    
+}
+
+.link-omoss a{
+    color: rgb(9, 20, 46);
+    justify-content: space-around;
+}
+.link-omoss a:visited {
+    color: rgb(9, 20, 46);
+}
+
+/* .meny-höger-sida-omoss  */
+
+.link-omoss a:hover {
+    background-color: rgba(9, 20, 46, 0.7);
+    color: #fff;
+    border-radius: 3%;
+    padding: 10px 10px;
+    margin: 2%;
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+    padding: 0;
+    }
+    to {
+    padding: 10px 10px;
+    }
+}
+.banorna {
+    margin: 5%;
+    flex-wrap: wrap;
+    background-color: rgb(128, 128, 128, 0.3);
+    font-size: large;
+}
+
+.banan1, .banan2, .banan3 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+.img-bana {
+    width: 25%;
+    height: 100%;
+    margin: 2%;
+    border-radius: 50%;
+}
+
+ .text-bana {
+    width: 50%;
+    float: right;
+    margin-left: 15%;
+    line-height: 2rem;
+ }
+/* MEDIA FÖR BANORNA ------------------*/
+ @media screen and (max-width:768px) {
+
+    .meny-höger-sida-omoss {
+        font-family: "Josefin Sans";
+        line-height: 25px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        color:#fff;
+        list-style: none;
+        float: left;
+        margin-top: 40%;
+    }
+    
+
+    .link-omoss a{
+        color: rgb(9, 20, 46);
+    }
+
+    .link-omoss a:visited {
+        color: rgb(9, 20, 46);
+    }
+    
+    /* .meny-höger-sida-omoss  */ 
+    .link-omoss a:hover {
+        margin: 2%;
+        text-decoration: none;
+}
+.banorna {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.banan1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 25%;
+}
+.banan2  {
+margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.banan3 {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.banan1 img, .banan2 img, .banan3 img {
+ margin: auto;
+ width: 70%;
+ height: auto;
+}
+
+.text-bana {
+    margin:auto;
+    width: 90%;
+ }
+ }
+ /* MEDIA FÖR BANORNA ------------------*/
